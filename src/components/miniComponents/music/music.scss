@@ -1,0 +1,111 @@
+.music__container {
+
+    .music__player {
+        margin-right: 20px;
+        width: 2rem;
+        height: 2rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: var(--color__white);
+        border-radius: 50%;
+        box-shadow: 1px 3px 33px 4px rgba(56, 55, 55, 0.114);
+
+        i {
+            color: var(--color__3);
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+
+    .music__idicator__paly {
+
+        .playing {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+
+            position: absolute;
+            right: 5%;
+            top: 50%;
+            margin: -20px auto;
+            width: 50px;
+            height: 40px;
+            text-align: center;
+            font-size: 10px;
+            -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+
+            div {
+                background-color: var(--color__3);
+                height: 80%;
+                width: 3px;
+                display: inline-block;
+                -webkit-transition: all 0.2s ease;
+                transition: all 0.2s ease;
+                -webkit-animation: wavy 1s ease infinite forwards;
+                animation: wavy 1s ease infinite forwards;
+                -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+                box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33);
+            }
+
+            .rect2 {
+                -webkit-animation-delay: 0.25s;
+                animation-delay: 0.25s;
+            }
+
+            .rect3 {
+                -webkit-animation-delay: 0.5s;
+                animation-delay: 0.5s;
+            }
+
+            .rect4 {
+                -webkit-animation-delay: 0.75s;
+                animation-delay: 0.75s;
+            }
+
+            .rect5 {
+                -webkit-animation-delay: 1s;
+                animation-delay: 1s;
+            }
+
+            @-webkit-keyframes wavy {
+                0% {
+                    -webkit-transform: scaleY(1);
+                    transform: scaleY(1);
+                }
+
+                50% {
+                    -webkit-transform: scaleY(0.6);
+                    transform: scaleY(0.6);
+                }
+
+                100% {
+                    -webkit-transform: scaleY(1);
+                    transform: scaleY(1);
+                }
+            }
+
+            @keyframes wavy {
+                0% {
+                    -webkit-transform: scaleY(1);
+                    transform: scaleY(1);
+                }
+
+                50% {
+                    -webkit-transform: scaleY(0.6);
+                    transform: scaleY(0.6);
+                }
+
+                100% {
+                    -webkit-transform: scaleY(1);
+                    transform: scaleY(1);
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.redes__conted{
+    position: fixed;
+    bottom: 0;
+    margin-left: 3REM;
+    .redes__item{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+
+
+        i{
+            font-size: 1.4rem;
+            transition: all .7s ;
+            &:hover{    
+                  transform: translateY(-10px);
+            }
+            
+        }
+
+        h1{
+            height: 15rem;
+            width: 2px;
+            
+            background-color: var(--color__3);
+            
+        }
+    }
+}

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700;800&display=swap');
+
+
+:root {
+    --color__black: black;
+    --color__white: white;
+    --color__grey: rgba(198, 197, 197, 0.883);
+
+    --color__1: rgb(12, 10, 74);
+    --color__2: rgb(4, 3, 41);
+    --color__3: rgb(255, 0, 64);
+
+    /* fonst   */
+    --fonts__1: 'Poppins', sans-serif;
+
+}
+
+
+
+body,
+html,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonts__1);
+
+    scroll-behavior: smooth;
+    
+}
+
+
+
+#inicio,
+#about,
+#projects,
+#memories,
+#contact {
+
+    background: rgb(12, 10, 74);
+    background: radial-gradient(circle, rgba(12, 10, 74, 1) 0%, rgba(9, 9, 61, 1) 34%, rgba(7, 7, 45, 1) 61%);
+
+}
+
+body {
+
+
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: var(--color__1);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: var(--color__3);
+        border-radius: 3px;
+
+        &:hover {
+            background-color: var(--color__grey);
+        }
+    }
+
+    background: rgb(12, 10, 74);
+    background: radial-lineal(circle, rgb(6, 5, 38) 0%, rgba(9, 9, 61, 1) 34%, rgba(7, 7, 45, 1) 61%);
+
+
+    color: var(--color__white);
+}
+
+a {
+    color: var(--color__black);
+    text-decoration: none;
+}

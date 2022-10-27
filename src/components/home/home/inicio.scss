@@ -1,0 +1,108 @@
+.inicio {
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgb(12, 10, 74);
+    background: radial-gradient(circle, rgba(12, 10, 74, 1) 0%, rgba(9, 9, 61, 1) 34%, rgba(7, 7, 45, 1) 61%);
+
+    .name__conted {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .tex__name__conted {
+
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .name2 {
+                font-size: 8rem;
+                gap: 10px;
+                font-weight: 700;
+
+                position: absolute;
+                display: flex;
+                text-transform: uppercase;
+
+                color: transparent;
+                -webkit-text-stroke: 2px rgba(255, 0, 55, 0.188);
+
+                filter: blur(1px);
+
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+            .name {
+                font-size: 5rem;
+
+                text-transform: capitalize;
+                text-align: center;
+                position: relative;
+
+                span {
+                    color: var(--color__3);
+                }
+            }
+        }
+
+        .profecion {
+            font-size: 3rem;
+            text-align: left;
+        }
+
+        p {
+            width: 70%;
+            margin-top: 1rem;
+            font-size: 1.3rem;
+
+            text-align: center;
+
+            color: var(--color__grey);
+        }
+    }
+
+    @media (max-width : 1075px) {
+
+        .name__conted {
+            .tex__name__conted {
+
+                width: 100%;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .name2 {
+                    text-align: center;
+                    font-size: 5rem;
+                    flex-wrap: wrap;
+                }
+
+                .name {
+                    font-size: 4rem;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+
+            .profecion {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
