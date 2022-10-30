@@ -1,3 +1,251 @@
 #projects {
-    height: 100vh;
+    height: max-content;
+    padding: 3rem 0;
+
+    .project__container {
+        padding: 1rem 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .taps__idicator {
+            padding-bottom: 1rem;
+
+            ul {
+                display: flex;
+                gap: 30px;
+
+
+                .menu__active {
+
+                    cursor: pointer;
+                    list-style: none;
+                    text-transform: capitalize;
+
+                    font-weight: 700;
+                    font-size: 1.3rem;
+                    padding: .2rem .4rem;
+
+                    transition: all .4s;
+
+                    color: white;
+
+                    &::first-letter {
+                        color: var(--color__3);
+                    }
+
+                    &:hover {
+                        background-color: var(--color__white);
+                        color: var(--color__3);
+
+                        border-radius: 7px;
+                        padding: .2rem .4rem;
+
+                        &::first-letter {
+                            color: var(--color__1);
+                        }
+                    }
+                }
+
+                .active__tabs {
+                    background-color: var(--color__white);
+                    color: var(--color__3);
+
+                    border-radius: 7px;
+                    padding: .2rem .4rem;
+
+                    &::first-letter {
+                        color: var(--color__1);
+                    }
+                }
+
+            }
+        }
+
+        .tabs__intem__conted {
+            width: 85%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(13.75rem, 1fr));
+            gap: 2rem;
+            place-items: center;
+
+            place-items: center;
+
+            .iem__coar__container {
+
+                width: 15.5rem;
+                overflow: hidden;
+                background-color: var(--color__2);
+                box-shadow: 2px 3px 10px rgba(2, 15, 42, 0.612);
+
+                border-radius: 10px;
+
+                .linker {
+                    .project__image__conted {
+                        width: 100%;
+                        overflow: hidden;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .card__project__info {
+                    padding: 0 .5rem;
+
+                    h2 {
+                        text-transform: capitalize;
+
+                        &::first-letter {
+                            color: var(--color__3);
+                        }
+
+                    }
+
+                    p {
+                        color: var(--color__grey);
+                        font-size: 1rem;
+                    }
+                }
+
+                .skills__logo {
+                    justify-content: center;
+                    display: flex;
+                    gap: .625rem;
+                    padding: .5625rem 0 0 0;
+
+                    i {
+                        font-size: 1.2rem;
+                    }
+
+                    .bxl-javascript {
+                        color: orange;
+                    }
+
+                    .bxl-react {
+                        color: rgb(0, 72, 255);
+                    }
+
+                    .bxl-sass {
+                        color: rgb(255, 0, 149);
+                    }
+                }
+
+                .buttoms {
+
+                    gap: 10px;
+                    font-size: 1rem;
+                    padding: .5rem 0 1rem 0;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    a {
+                        color: var(--color__white);
+                        text-transform: capitalize;
+
+                        i {
+                            color: var(--color__3);
+                        }
+                    }
+                }
+
+                animation-name: filter;
+                animation-duration: .7s;
+
+
+            }
+
+            animation-name: filter;
+            animation-duration: .7s;
+
+
+        }
+
+        @keyframes filter {
+            0% {
+                opacity: 0;
+                scale: .5;
+            }
+
+            100% {
+                opacity: 1;
+                scale: 1;
+            }
+        }
+
+        @media(max-width: 700px) {
+
+            .taps__idicator {
+                padding: 2rem 0 1rem 0;
+
+                ul {
+                    display: flex;
+                    gap: 10px;
+
+                    .menu__active {
+
+                        font-weight: 400;
+                        font-size: 1.1rem;
+                        padding: .1rem .1rem;
+
+                        transition: all .4s;
+
+                        &::first-letter {
+                            color: var(--color__3);
+                        }
+
+                        &:hover {
+                            background-color: var(--color__white);
+                            color: var(--color__3);
+
+                            border-radius: 7px;
+                            padding: .1rem .1rem;
+
+                            &::first-letter {
+                                color: var(--color__1);
+                            }
+                        }
+                    }
+
+
+                }
+            }
+
+            .tabs__intem__conted {
+                width: 98%;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                place-items: center;
+
+
+                .iem__coar__container {
+                    width: 10rem;
+
+                    .card__project__info {
+                        padding: 0;
+
+                        p {
+                            font-size: .8rem;
+                        }
+                    }
+
+                    .buttoms {
+                        gap: 5px;
+                        padding: .5rem 0 1rem 0;
+
+                        a {
+                            font-size: .8rem;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+
 }
+

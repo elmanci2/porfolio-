@@ -52,8 +52,10 @@ const Menu = () => {
                         </div>)
 
                     }
-
+                    <Music />
                 </ul>
+
+
             </div>
         </>
     )

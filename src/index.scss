@@ -15,8 +15,6 @@
 
 }
 
-
-
 body,
 html,
 * {
@@ -26,13 +24,12 @@ html,
     font-family: var(--fonts__1);
 
     scroll-behavior: smooth;
-    
+
+
 }
 
-
-
-#inicio,
 #about,
+#inicio,
 #projects,
 #memories,
 #contact {

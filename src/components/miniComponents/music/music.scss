@@ -1,5 +1,30 @@
 .music__container {
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    backdrop-filter: filter(4px);
+    background: linear-gradient(to left, rgba(58, 104, 177, 0.739), rgba(161, 6, 89, 0.739));
+    padding: 0 .7rem;
+    border-radius: 7px;
+
+    box-shadow: 1px 1px 33px 0px rgba(96, 6, 175, 0.244);
+
+    i {
+        font-size: 2rem;
+        width: 2rem;
+        height: 2rem;
+
+        background-color: var(--color__white);
+        color: var(--color__3);
+        text-align: center;
+
+        border-radius: 50%;
+        box-shadow: 1px 1px 13px 0px rgba(0, 0, 0, 0.305);
+    }
+
+
     .music__player {
         margin-right: 20px;
         width: 2rem;
@@ -9,15 +34,15 @@
         align-items: center;
         justify-content: center;
 
-        background-color: var(--color__white);
         border-radius: 50%;
         box-shadow: 1px 3px 33px 4px rgba(56, 55, 55, 0.114);
 
-        i {
-            color: var(--color__3);
-            font-size: 2rem;
-            text-align: center;
-        }
+    }
+
+
+    .music__idicator {
+        margin-top: -20rem;
+        position: absolute;
     }
 
     .music__idicator__paly {
@@ -27,10 +52,6 @@
             align-items: center;
             gap: 2px;
 
-            position: absolute;
-            right: 5%;
-            top: 50%;
-            margin: -20px auto;
             width: 50px;
             height: 40px;
             text-align: center;
@@ -39,7 +60,7 @@
             transition: all 0.2s ease;
 
             div {
-                background-color: var(--color__3);
+                background-color: var(--color__white);
                 height: 80%;
                 width: 3px;
                 display: inline-block;
@@ -49,7 +70,7 @@
                 animation: wavy 1s ease infinite forwards;
                 -webkit-transform-origin: 50% 50%;
                 transform-origin: 50% 50%;
-                box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33);
+                box-shadow: 1px 1px 2px rgba(42, 6, 110, 0.181);
             }
 
             .rect2 {
@@ -108,4 +129,16 @@
 
         }
     }
+
+}
+
+
+@media (max-width:744px) {
+    .menu__conted__item {
+        .music__container {
+            display: none;
+        }
+
+    }
+
 }
