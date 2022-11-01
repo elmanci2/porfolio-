@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './menu.scss'
 import logo from '../../assets/img/logo.png'
 import { menuItem } from '../../constant/constant'
@@ -9,6 +9,7 @@ import Music from '../miniComponents/music/Music'
 const Menu = () => {
 
     const [menu, setMenu] = useState(false);
+
 
     return (
         <>
@@ -39,7 +40,6 @@ const Menu = () => {
                     </ul>
 
                     <Music />
-
                 </nav>
             </main>
 

@@ -1,3 +1,237 @@
 #contact {
     height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .container__center {
+        width: 100%;
+        padding: 1rem 0;
+
+        display: grid;
+        place-items: center;
+
+        .contact__title {
+            font-size: 2rem;
+
+            text-transform: capitalize;
+
+            &::first-letter {
+                color: var(--color__3);
+
+            }
+        }
+
+        .form__conted {
+
+            width: 90%;
+            gap: 2.875rem;
+
+            display: grid;
+            place-items: center;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            .conta__info {
+
+                display: grid;
+                place-items: center;
+                gap: .925rem;
+                height: 100%;
+
+                p {
+                    text-align: center;
+                }
+
+                .contact__item__conted {
+
+                    .item {
+                        padding: .7rem 0;
+
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+
+                        h4 {
+                            text-transform: capitalize;
+
+                            display: flex;
+                            align-items: center;
+                            gap: .625rem;
+
+                            color: var(--color__3);
+
+                            i {
+                                color: var(--color__white);
+                            }
+                        }
+
+                        a {
+                            color: var(--color__grey);
+
+                            i {
+                                color: var(--color__3);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .check__conted {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .check {
+                    color: var(--color__3);
+                    font-size: 10rem;
+                    text-align: center;
+
+                    animation-name: check;
+                    animation-duration: .7s;
+
+
+                    @keyframes check {
+                        0% {
+                            opacity: 0;
+                            scale: .5;
+                        }
+                        100% {
+                            scale: 1;
+                        }
+                    }
+                }
+
+
+                span {
+                    font-size: 1.3rem;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    letter-spacing: 2px;
+
+                    &::first-letter {
+                        color: var(--color__3);
+                    }
+                }
+            }
+
+
+            .formlario__contact {
+
+                height: 100%;
+
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+
+
+                form {
+                    width: 100%;
+                    gap: 1.10rem;
+
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    input {
+                        padding-top: 1rem;
+                        font-size: 1rem;
+
+                        background: none;
+                        border: none;
+                        outline: none;
+
+                        border-bottom: 2px solid var(--color__3);
+                        color: var(--color__white);
+
+
+                        &::placeholder {
+                            color: var(--color__grey);
+                        }
+                    }
+
+                    textarea {
+                        background: none;
+                        outline: none;
+                        padding: 1rem;
+
+                        color: var(--color__white);
+                        border: 1px solid var(--color__3);
+                        font-size: 1rem;
+                        border-radius: 3px;
+
+                        &::placeholder {
+                            color: var(--color__grey);
+                        }
+                    }
+
+                    .bottom__ {
+                        display: grid;
+                        place-items: center;
+
+                        button {
+                            padding: .325rem 1rem;
+                            border-radius: .3125rem;
+                            font-size: 1.1rem;
+
+                            border: none;
+                            width: max-content;
+                            text-transform: uppercase;
+
+                            font-weight: 600;
+                            letter-spacing: .1pc;
+
+                            color: var(--color__white);
+                            background-color: var(--color__3);
+
+                            transition: all .3s;
+
+                            &:hover {
+                                background-color: var(--color__white);
+                                color: var(--color__2);
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            @media (max-width:810px) {
+                display: flex;
+                flex-direction: column-reverse;
+                width: 100%;
+
+                .formlario__contact{
+                    width: max-content;
+                }
+
+                .conta__info {
+
+                    display: grid;
+                    place-items: center;
+                    gap: .925rem;
+                    height: 100%;
+
+                    h3 {
+                        display: none;
+                    }
+
+                    p {
+                        display: none;
+                    }
+
+                    .contact__item__conted {
+                        display: flex;
+                        gap: 20px;
+                        flex-direction: row;
+                    }
+                }
+            }
+        }
+
+
+    }
 }

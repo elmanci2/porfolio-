@@ -10,7 +10,6 @@ const Music = () => {
     const [next, setNext] = useState(0);
 
     const playing = useRef();
-    console.log(next);
 
     const audio = playing.current; // audi seletor
 

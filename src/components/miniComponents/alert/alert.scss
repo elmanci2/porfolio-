@@ -1,0 +1,13 @@
+.alert__conatiner {
+    width: max-content;
+    padding: .1rem 1rem;
+    background-color: rgb(0, 150, 43);
+    border-radius: 4px;
+    margin-top: 1rem;
+
+    span {
+        color: var(--color__2);
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+}
